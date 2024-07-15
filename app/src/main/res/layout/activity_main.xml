@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="@color/dark_grey"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvCallLogType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Calls"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:onClick="onFilterButtonClick"
+        android:text="Filter"
+        android:background="?attr/selectableItemBackground"
+        android:textColor="@android:color/white"
+        android:padding="12dp" />
+
+    <ListView
+        android:id="@+id/listViewCallLogs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>
